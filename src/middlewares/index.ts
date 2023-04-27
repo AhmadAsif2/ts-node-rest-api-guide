@@ -9,7 +9,7 @@ export const isAuthenticated = async (
   next: express.NextFunction
 ) => {
   try {
-    const sessionToken = req.cookies['ANTONIO-AUTH'];
+    const sessionToken = req.cookies['AHMAD_AUTH_SESSION_TOKEN'];
 
     if (!sessionToken) {
       return res.sendStatus(403);
